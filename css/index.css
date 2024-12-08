@@ -1,0 +1,728 @@
+
+
+/* Seribu Rasa Description */
+
+.slides {
+  position: static;
+  display: flex;
+  width: 100%;
+  max-height: 680px;
+  height: 100%;
+  margin-top: 80px;
+}
+
+.slides .slide {
+  display: none;
+}
+
+.slides .slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slides .navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slides .navigation .prev,
+.slides .navigation .next {
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  user-select: none;
+  transition: 0.6s ease;
+}
+
+.slides .navigation .prev:hover,
+.slides .navigation .next:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.box-description {
+  margin-top: 80px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  background: linear-gradient(to right, #fdfaf2, white);
+}
+
+.content-description {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.title-description {
+  font-size: 3.5rem;
+}
+
+.content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+.content-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #186f65;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.content-description button:hover {
+  border: 3px solid #186f65;
+  color: #2d3e50;
+  background-color: transparent;
+}
+
+.content-image {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+.content-image img {
+  min-width: 200px;
+  width: 100%;
+}
+/* End of Seribu Rasa Description */
+
+/*About SR*/
+
+.about-sr {
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  background-color: #fdfaf2;
+  background: linear-gradient(to left, #f7e1ae, #fdfaf2);
+}
+
+.about-sr .about-description {
+  flex: 1 1;
+  padding: auto;
+}
+
+.title2 {
+  font-size: 2.5rem;
+  color: #b2533e;
+}
+
+.about-sr .about-description p {
+  margin-block: 1rem;
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  padding-right: 10px;
+}
+
+.hr2 {
+  max-width: 540px;
+  width: 100%;
+  height: 5px;
+  margin-left: 0;
+  border-radius: 15px;
+  background-color: #b2533e;
+}
+
+.about-sr .about-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #186f65;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.about-sr .about-description button:hover {
+  border: 3px solid #186f65;
+  color: #2d3e50;
+  background-color: transparent;
+}
+
+.about-sr .about-image {
+  flex: 1;
+  display: flex;
+}
+
+.about-sr .about-image img {
+  max-width: 450px;
+  width: 100%;
+  margin: auto;
+}
+
+.hero {
+  display: flex;
+}
+
+/* end of about-sr */
+
+/*Offering*/
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  background-color: white;
+  background: linear-gradient(to top, #fdfaf2, white);
+}
+
+.offer-des {
+  margin-top: 30px;
+}
+
+.title3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #b2533e;
+
+  margin-bottom: 0;
+}
+
+.hr3 {
+  align-items: center;
+  max-width: 350px;
+  margin: auto;
+  width: 100%;
+  height: 5px;
+  border-radius: 15px;
+  background-color: #b2533e;
+}
+
+.offer-des p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-block: 20px;
+}
+.wrapper i {
+  top: 45%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: -22px;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  height: 370px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 330px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 3px black;
+  margin-block: 10px;
+}
+.carousel .card .img {
+  height: 248px;
+  width: 100%;
+}
+.card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 20px 0 5px;
+}
+.carousel .card span {
+  color: black;
+  font-size: 1.31rem;
+}
+
+.grid .card {
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px 3px black;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 30px 100px;
+  grid-gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-block: 5px;
+}
+
+.grid img {
+  max-width: 300px;
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card p {
+  margin-block: 7px;
+  font-size: 1.2rem;
+}
+
+.offer-button {
+  text-align: center;
+  align-items: center;
+}
+
+.offer-button button {
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  margin-block: 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #186f65;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.offer-button button:hover {
+  border: 3px solid #186f65;
+  color: #2d3e50;
+  background-color: transparent;
+}
+
+/* end of offer */
+
+/*Order*/
+.order {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-height: 500px;
+  height: 100%;
+  width: 100%;
+  background-color: #fdfaf2;
+  background: linear-gradient(to top, #f7e1ae, #fdfaf2);
+}
+
+.order .order-des {
+  margin: 30px;
+}
+
+.title3 {
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #b2533e;
+}
+
+.hr4 {
+  width: 100%;
+  height: 5px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #b2533e;
+}
+
+.grid-order {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 30px;
+}
+
+.card-order img {
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.card-order {
+  width: 100%;
+  text-align: center;
+  margin-block: 50px;
+  font-weight: 700;
+}
+
+/* end of order */
+
+
+
+/* Responsive Page Setting */
+
+/* 1. Display Laptop */
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  .content-image img {
+    width: 75%;
+  }
+
+  .card {
+    max-width: 75%;
+  }
+
+  .hr2 {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .hr3 {
+    max-width: 270px;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .hr4 {
+    max-width: 610px;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+/* End of Display Laptop */
+
+/* 2. Display Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .slides {
+    height: 400px;
+    margin-top: 60px;
+  }
+
+  .content-description {
+    top: 20%;
+    left: 10%;
+  }
+
+  .hr2 {
+    max-width: 335px;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .hr3 {
+    max-width: 225px;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .hr4 {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .content-image img {
+    width: 62.5%;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-order {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 250px;
+    max-height: 300px;
+  }
+
+  .grid-order img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .card-order {
+    margin-block: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-col,
+  .footer-col-com {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .footer-col .title,
+  .footer-col-com .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-links i {
+    font-size: 17px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-col h3 {
+    margin-block: 7px;
+  }
+}
+/* End of Display Tablet */
+
+/* 3. Display HP */
+
+@media (max-width: 450px) {
+  .slides {
+    height: 200px;
+  }
+
+  .content-description {
+    top: 15%;
+    left: 5%;
+  }
+
+  .title-description {
+    font-size: 20px;
+  }
+
+  .title2 {
+    font-size: 20px;
+    color: #b2533e;
+  }
+
+  .title3 {
+    font-size: 20px;
+    color: #b2533e;
+    text-align: center;
+  }
+
+  .hr2 {
+    max-width: 135px;
+    width: 100%;
+    height: 4px;
+    border-radius: 15px;
+  }
+
+  .hr3 {
+    max-width: 175px;
+    width: 100%;
+    height: 4px;
+    border-radius: 15px;
+  }
+
+  .hr4 {
+    max-width: 120px;
+    width: 100%;
+    height: 4px;
+    border-radius: 15px;
+  }
+
+  header.navbar-container .logo img {
+    width: 130px;
+  }
+
+  .content-description {
+    width: 40%;
+  }
+
+  .content-image img {
+    width: 30%;
+  }
+
+  .content-description button {
+    font-size: 9px;
+    padding: 5px 15px;
+  }
+
+  .about-sr .about-description button {
+    font-size: 9px;
+    padding: 5px 15px;
+  }
+
+  .offer-button button {
+    font-size: 9px;
+    padding: 5px 15px;
+  }
+
+  .about-description {
+    margin-block: 15px;
+  }
+
+  .wrapper {
+    width: 85%;
+  }
+
+  .wrapper .carousel {
+    height: 250px;
+    grid-auto-columns: 65%;
+    gap: 0px;
+  }
+
+  .carousel .card {
+    height: 225px;
+    width: 150px;
+  }
+
+  .carousel .card h2 {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .wrapper i {
+    top: 45%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+
+  .grid .card {
+    max-width: 150px;
+    max-height: 200px;
+  }
+
+  .grid .card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .grid-order {
+    width: 350px;
+  }
+
+  .footer-col img {
+    max-width: 144px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright {
+    text-align: center;
+    width: 100%;
+  }
+}
+/* End of Display Hp */

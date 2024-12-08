@@ -1,0 +1,710 @@
+.container-menu {
+  height: 2100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: linear-gradient(360deg, #fce09b, white);
+  margin-top: 100px;
+}
+
+/* Side Bar */
+.side-bar {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1300px;
+  max-width: 300px;
+  width: 100%;
+  margin: 30px 10px;
+  transition: transform 0.3s ease-in-out;
+}
+/* End of Side Bar */
+
+/* Start Kategori Menu */
+.menu-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fce09b;
+  box-shadow: 3px 3px 5px 2px rgb(0, 0, 0, 0.5);
+  border: 1px solid #186f65;
+}
+
+.list-cat {
+  max-width: 400px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+}
+
+.list-cat ul {
+  padding: 0;
+  max-height: 500px;
+  height: 100%;
+  justify-content: center;
+  list-style: none;
+}
+
+.list-cat li {
+  color: #186f65;
+  font-size: 1.1rem;
+  word-spacing: 2px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  height: 53px;
+  padding: 12px 20px;
+}
+
+.list-hr {
+  height: 3px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #186f65;
+}
+
+.list-cat .active {
+  background-color: #d7996c;
+  color: white;
+}
+
+.active li a {
+  color: white;
+}
+/* End of Kategori Menu*/
+
+/* Start Artikel */
+.article {
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  height: 775px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #b2533e;
+  box-shadow: 3px 3px 5px 2px rgb(0, 0, 0, 0.5);
+}
+
+.title-article {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 24px;
+}
+
+.title-article-hr {
+  height: 5px;
+  background-color: #fce09b;
+  margin-block: 25px;
+}
+
+.article p {
+  text-align: left;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.article a {
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  background-color: #d7996c;
+  border: 1px solid #b2533e;
+  font-size: 16px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.article i {
+  margin-left: 10px;
+}
+
+.article-hr {
+  margin-block: 30px;
+}
+/* End of Artikel */
+
+.dropdown {
+  display: none;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1800px;
+  max-width: 850px;
+  width: 100%;
+  margin: 20px 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  top: 0;
+}
+
+.sub-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  height: 1900px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  max-height: 50px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 325px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+
+.search-bar input[type="text"] {
+  font-family: "Poppins";
+  font-weight: 650;
+  text-align: center;
+  font-size: 16px;
+  border: transparent;
+  background-color: transparent;
+  margin-left: 3px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 6px 10px;
+  font-size: 17px;
+  border: transparent;
+  background-color: transparent;
+}
+/* End of Search Bar */
+
+/* Start Daftar Menu */
+.list-menu {
+  display: grid;
+  max-width: 850px;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-menu {
+  display: flex;
+  flex-wrap: wrap;
+  height: 470px;
+  max-width: 375px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 2px rgb(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.card-menu:hover {
+  box-shadow: 0 8px 12px 0 rgba(54, 17, 17, 0.9);
+}
+
+.card-menu img {
+  max-width: 375px;
+  width: 100%;
+  max-height: 260px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu-detail {
+  height: 150px;
+  width: 100%;
+  padding: 10px 20px;
+  color: #186f65;
+  text-align: justify;
+}
+
+.menu-detail h4 {
+  font-weight: 400;
+}
+
+.menu-detail a {
+  text-decoration: none;
+  color: #b2533e;
+  font-weight: 600;
+}
+
+.menu-name {
+  display: flex;
+}
+
+.menu-price {
+  width: 220px;
+}
+
+.menu-rating {
+  width: 120px;
+  justify-content: center;
+  align-items: end;
+  color: #b2533e;
+  text-align: right;
+}
+
+.menu-description {
+  margin-block: 10px;
+  color: #b2533e;
+}
+
+.menu-btn {
+  display: flex;
+  width: 100%;
+  max-height: 40px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-btn button {
+  padding: 0.5rem 1.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #186f65;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.menu-btn button:hover {
+  border: 3px solid #186f65;
+  color: #2d3e50;
+  background-color: transparent;
+}
+
+.alert {
+  width: 830px;
+  font-size: 21px;
+  position: absolute;
+  text-align: center;
+}
+/* End of Daftar Menu */
+
+.article-bottom {
+  display: none;
+}
+
+/* Responsive Page Setting */
+
+/* 1. Display Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .container-menu {
+    width: 100%;
+  }
+
+  .side-bar {
+    width: 230px;
+    height: 1200px;
+  }
+
+  .sub-main-content {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .main-content {
+    width: 600px;
+  }
+
+  .card-menu {
+    width: 280px;
+    height: 440px;
+  }
+
+  .list-menu {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-category ul li a {
+    font-size: 16px;
+  }
+
+  .title-article {
+    font-size: 21px;
+  }
+
+  .article {
+    height: 650px;
+  }
+
+  .article p {
+    font-size: 12px;
+  }
+
+  .article a {
+    font-size: 12px;
+    margin-left: 25px;
+  }
+}
+/* End of Display Laptop */
+
+/* 2. Display Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container-menu {
+    margin-top: 60px;
+    height: 2900px;
+  }
+
+  .menu-category {
+    max-height: 450px;
+    height: 100%;
+  }
+
+  .list-cat {
+    max-height: 450px;
+    height: 100%;
+  }
+
+  .menu-category ul li a {
+    font-size: 1.4rem;
+    padding: 12px 15px;
+    height: 47px;
+  }
+
+  .title-article {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .article p {
+    font-size: 16px;
+  }
+
+  .article {
+    height: 740px;
+    max-width: 630px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .article p {
+    font-size: 12px;
+  }
+
+  .article a {
+    font-size: 12px;
+    margin-left: 25px;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .dropbtn {
+    width: 350px;
+    height: 40px;
+    background-color: #186f65;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 99px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .dropdown {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    display: none;
+    background-color: #fce09b;
+    width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #186f65;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content hr {
+    height: 1.5px;
+    background-color: #186f65;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #d7996c;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .article-bottom {
+    width: 100%;
+    display: block;
+    margin-top: 120px;
+    height: 770px;
+  }
+
+  .title-article-hr {
+    height: 3px;
+  }
+
+  .main-content {
+    width: 800px;
+    margin-left: 0;
+  }
+
+  .sub-main-content {
+    margin-left: 0;
+  }
+
+  .card-menu {
+    width: 300px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 240px;
+    margin-left: 30px;
+  }
+
+  .list-menu {
+    display: grid;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-name h3 {
+    font-size: 14px;
+  }
+}
+/* End of Display Tablet */
+
+/* 3. Display HP */
+@media (max-width: 450px) {
+  .container-menu {
+    margin-top: 60px;
+    width: 100%;
+    height: 665vh;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .highliht-article {
+    display: none;
+  }
+
+  .dropbtn {
+    width: 350px;
+    height: 40px;
+    background-color: #186f65;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 99px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .dropdown {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    display: none;
+    background-color: #fce09b;
+    width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #186f65;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content hr {
+    height: 1.5px;
+    background-color: #186f65;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #d7996c;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .search-bar {
+    width: 355px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .search-box {
+    display: flex;
+    width: 100%;
+  }
+
+  .main-content {
+    max-height: 2500px;
+    height: 100%;
+  }
+
+  .sub-main-content {
+    margin-left: 0;
+    height: 100%;
+  }
+
+  .list-menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-menu {
+    max-width: 340px;
+    width: 100%;
+    margin-left: 0;
+    margin: auto;
+  }
+
+  .menu-detail {
+    font-size: 1.4rem;
+  }
+
+  .menu-detail h3 {
+    font-size: 14px;
+  }
+
+  .menu-detail h4 {
+    font-size: 12px;
+  }
+
+  .menu-detail a {
+    font-size: 10px;
+  }
+
+  .article-bottom {
+    width: 330px;
+    display: block;
+    margin-top: 1300px;
+    margin-bottom: 20px;
+  }
+
+  .article {
+    height: 520px;
+  }
+
+  .title-article {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+
+  .article p {
+    font-size: 14px;
+  }
+
+  .article a {
+    margin-left: 140px;
+  }
+
+  .article hr {
+    margin-block: 15px;
+  }
+
+  .title-article-hr {
+    margin-block: 0;
+  }
+}
+/* End of Display Hp */

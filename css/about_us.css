@@ -1,0 +1,509 @@
+/* Tentang Kami */
+.about-us {
+  margin-top: 60px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #fdfaf2, white);
+}
+
+main .about-us .about-us-description {
+  flex: 1 1;
+  text-align: center;
+  width: 100%;
+  padding: 10px 60px;
+}
+
+main .about-us .about-us-description .about-us-title {
+  font-size: 42px;
+  color: #b2533e;
+}
+
+.about-us-description hr {
+  height: 5px;
+  background-color: #b2533e;
+  width: 300px;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+main .about-us .about-us-description p {
+  font-size: 21px;
+  text-align: left;
+  padding: 10px;
+}
+
+main .about-us .about-us-image {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+main .about-us .about-us-image img {
+  width: 100%;
+}
+/* End of Tentang Kami */
+
+/*Mengapa Memilih Kami*/
+.featured {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.why-choose-us-title {
+  justify-content: center;
+  text-align: center;
+  font-size: 42px;
+  color: #b2533e;
+  margin-top: 20px;
+}
+
+.why-choose-us-title hr {
+  height: 5px;
+  background-color: #b2533e;
+  width: 680px;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.about-image {
+  margin-block: 20px;
+  width: 700px;
+}
+
+.about-image img {
+  width: 100%;
+  left: 0;
+}
+
+.featured-description-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.featured-description-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.featured-description-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.featured-description-item p {
+  font-size: 21px;
+  text-align: left;
+  padding: 10px;
+}
+/* End of Mengapa Memilih Kami */
+
+/*Tim Kami*/
+.team {
+  max-height: 950px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  background: linear-gradient(to left, #f7e1ae, #fdfaf2);
+}
+
+.team .our-team {
+  margin: 30px;
+}
+
+.team .our-team .our-team-title {
+  justify-content: center;
+  text-align: center;
+  font-size: 42px;
+  color: #b2533e;
+}
+
+.our-team hr {
+  width: 200px;
+  height: 5px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #b2533e;
+}
+
+.social-media i {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.social-media i:hover {
+  border-radius: 20px;
+  box-shadow: 0 8px 12px 0 rgba(54, 17, 17, 0.9);
+}
+
+.our-team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  gap: 50px 20px;
+}
+
+.our-team-container .our-team-item {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
+  color: white;
+  background-color: #d7996c;
+  box-shadow: 3px 3px 5px 2px rgb(0, 0, 0, 0.5);
+}
+
+.our-team-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 99px;
+  box-shadow: 3px 3px 5px 2px rgb(0, 0, 0, 0.5);
+  object-fit: cover;
+  margin-top: 10px;
+  background-color: #f7e1ae;
+}
+
+.our-team-item p {
+  font-size: 11px;
+}
+/* End of Tim Kami */
+
+/* Responsive Page Setting */
+
+/* 1. Display Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+  .about-us-title {
+    font-size: 1.75rem;
+  }
+
+  .our-team hr {
+    width: 120px;
+  }
+
+  .our-team-container .our-team-item {
+    width: 300px;
+  }
+
+  .our-team-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    width: 100%;
+    gap: 35px;
+  }
+
+  .team .our-team .our-team-title {
+    font-size: 32px;
+  }
+
+  .why-choose-us-title {
+    font-size: 32px;
+  }
+
+  main .about-us .about-us-description .about-us-title {
+    font-size: 32px;
+  }
+
+  .about-us-description hr {
+    width: 233px;
+    margin-bottom: 10px;
+  }
+
+  .about-us {
+    margin-top: 80px;
+  }
+
+  .why-choose-us-title hr {
+    width: 521px;
+  }
+
+  .our-team hr {
+    width: 153px;
+  }
+
+  main .about-us .about-us-description p {
+    font-size: 16px;
+  }
+
+  .featured-description-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+
+  .team {
+    max-height: 1300px;
+    height: 100%;
+  }
+}
+/* End of Display Laptop */
+
+/* 2. Display Tablet */
+@media (max-width: 768px) {
+  main {
+    min-height: 100vh;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+  .about-us-title {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    margin-top: 60px;
+  }
+
+  .about-us {
+    margin-top: 60px;
+  }
+
+  .team {
+    max-height: 1200px;
+    height: 100%;
+  }
+
+  main .about-us .about-us-description {
+    padding: 10px;
+  }
+
+  main .about-us .about-us-image img {
+    width: 100%;
+  }
+
+  main .about-us .about-us-description .about-us-title {
+    font-size: 32px;
+  }
+
+  .about-us-description hr {
+    margin-bottom: 10px;
+    width: 230px;
+    height: 4px;
+  }
+
+  main .about-us .about-us-description p {
+    font-size: 14px;
+  }
+
+  h1.title2 {
+    font-size: 24px;
+    color: #b2533e;
+  }
+
+  .team .our-team .our-team-title {
+    font-size: 32px;
+  }
+
+  .why-choose-us-title {
+    font-size: 32px;
+  }
+
+  .why-choose-us-title hr {
+    width: 515px;
+  }
+
+  .featured-description-item p {
+    font-size: 14px;
+  }
+
+  .featured-description-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .our-team-item p {
+    font-size: 12px;
+  }
+
+  .our-team hr {
+    width: 145px;
+    height: 4px;
+  }
+
+  .our-team-container .our-team-item {
+    font-size: 14px;
+  }
+
+  .aboutus-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .our-team-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .social-media i {
+    font-size: 24px;
+  }
+}
+/* End of Display Tablet */
+
+/* 3. Display HP */
+@media (max-width: 450px) {
+  main .about-us .about-us-description p {
+    line-height: 1rem;
+    font-size: 10px;
+    text-align: justify;
+    padding-inline: 8px;
+  }
+
+  main .about-us .about-us-image img {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    height: 200px;
+    width: 100%;
+  }
+
+  main .about-us .about-us-description .about-us-title {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  main .why-choose-us-title {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .why-choose-us-title hr {
+    height: 3px;
+    background-color: #b2533e;
+    width: 260px;
+    border-radius: 15px;
+    margin: auto;
+  }
+
+  .featured {
+    max-height: 450px;
+    height: 100%;
+  }
+
+  .about-image {
+    width: 250px;
+  }
+
+  .featured .about-image img {
+    width: 100%;
+  }
+
+  .featured-description-item p {
+    font-size: 10px;
+    text-align: left;
+    padding: 5px;
+  }
+
+  .featured-description-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    gap: 1px;
+  }
+
+  .featured-description-item {
+    padding: 5px;
+  }
+
+  .featured-description-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .team {
+    max-height: 1400px;
+    height: 100%;
+  }
+
+  .team .our-team .our-team-title {
+    font-size: 16px;
+    color: #b2533e;
+  }
+
+  .our-team hr {
+    width: 77px;
+    height: 3px;
+  }
+
+  .our-team-container .our-team-item {
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+  }
+
+  .our-team-item h4 {
+    font-size: 10px;
+  }
+
+  .our-team-item p {
+    font-size: 8px;
+  }
+
+  .our-team-item .social-media i {
+    font-size: 12px;
+  }
+
+  .about-us {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  main .about-us .about-us-description {
+    width: 200px;
+    padding: 0;
+  }
+
+  .about-us-description hr {
+    width: 117px;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+
+  .our-team-container {
+    width: 450px;
+  }
+
+  .our-team-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 20px 10px;
+  }
+
+  .our-team-item {
+    max-width: 170px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .our-team-item img {
+    max-width: 100px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+  }
+
+  .social-media i {
+    font-size: 21px;
+  }
+}
+/* End of Display Hp */

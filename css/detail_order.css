@@ -1,0 +1,1264 @@
+/* Main Content */
+.container {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* Order List */
+.row {
+  max-width: 700px;
+  width: 100%;
+  max-height: 1000px;
+  height: 100%;
+  justify-content: left;
+}
+
+.title-order {
+  max-height: 100px;
+  color: #b2533e;
+  margin-inline: 20px;
+  font-size: 16px;
+  font-family: "Poppins";
+  margin-top: 20px;
+}
+
+.title-order hr {
+  max-width: 172px;
+  width: 100%;
+  height: 4px;
+  border-radius: 15px;
+  background-color: #b2533e;
+}
+/* End of Order List */
+
+/* Card Menu */
+.scroll {
+  overflow: auto;
+  max-height: 450px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.side-bar-order {
+  align-items: right;
+  flex: 1;
+  max-width: 650px;
+  width: 100%;
+  height: 150px;
+  margin: 20px 10px;
+  box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #fdfaf2;
+}
+
+.order-menu {
+  display: flex;
+  max-width: 650px;
+  width: 100%;
+  max-height: 150px;
+  height: 100%;
+}
+
+.side-bar-order img {
+  max-width: 150px;
+  width: 100%;
+  max-height: 150px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.order-type {
+  max-width: 350px;
+  width: 100%;
+  padding: 15px;
+}
+
+.order-type h3 {
+  justify-content: end;
+}
+
+.menu-price {
+  max-width: 120px;
+  width: 100%;
+  text-align: left;
+  padding-top: 3px;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.notes input {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #186f65;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.order-total {
+  display: flex;
+  max-height: 50px;
+  height: 100%;
+  padding-block: 10px;
+  margin-top: 30px;
+}
+
+.order-total p {
+  font-size: 21px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.order-total .minus {
+  background-color: white;
+  border: 1px solid #186f65;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-total .num {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.order-total .plus {
+  color: white;
+  background-color: #186f65;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* End of Card Menu */
+
+/* Add Order */
+.add-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  max-width: 665px;
+  max-height: 100%;
+  height: 75px;
+}
+
+.add-order h2 {
+  font-size: 18px;
+}
+
+.add-order button {
+  font-family: "Poppins", sans-serif;
+  max-width: 100px;
+  width: 100%;
+  justify-content: center;
+  padding: 5px 7px;
+  margin-block: 1.5rem;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: #b2533e;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.add-order button:hover {
+  border: 3px solid #b2533e;
+  color: #b2533e;
+  background-color: transparent;
+}
+
+.add-order a {
+  text-decoration: none;
+}
+/* End of Add Order */
+
+/* Shipping Information */
+.row-content {
+  display: flex;
+  height: 700px;
+  max-width: 600px;
+  width: 100%;
+  align-items: left;
+  justify-content: left;
+}
+
+.content {
+  flex-direction: column;
+  background-color: #fff1cd;
+  max-width: 600px;
+  width: 100%;
+  height: 590px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, 0.5);
+  margin-top: 85px;
+}
+
+.content p {
+  max-width: 150px;
+}
+
+.shipping-info {
+  color: #b2533e;
+  padding: 10px 20px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  justify-content: center;
+}
+
+.form .first-name,
+.last-name,
+.email,
+.no-telp {
+  max-width: 250px;
+  width: 100%;
+  max-height: 50px;
+  height: 100%;
+  margin: 10px 20px;
+}
+
+.form .first-name input,
+.last-name input,
+.email input,
+.no-telp input {
+  border: 1px solid #b2533e;
+  border-radius: 10px;
+  max-height: 35px;
+  height: 100%;
+  background-color: #fdfaf2;
+  height: 40px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: none; /* Chrome, Safari, Edge */
+}
+
+.form .address {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  width: 100%;
+  max-height: 130px;
+  height: 100%;
+  margin: 10px 20px;
+}
+
+.form .address textarea {
+  max-width: 550px;
+  width: 100%;
+  border: 1px solid #b2533e;
+  border-radius: 10px;
+  background-color: #fdfaf2;
+  padding: 10px;
+  resize: none;
+}
+
+.form input {
+  max-width: 250px;
+  width: 100%;
+  padding-left: 15px;
+}
+/* End of Shipping Information */
+
+/* Total Charge */
+.subtotal {
+  max-height: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtotal-item {
+  display: flex;
+  border-radius: 10px;
+  background-color: #fce09b;
+  max-width: 550px;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.subtotal-item h3 {
+  margin-block: 10px;
+}
+
+.subtotal-left,
+.subtotal-right {
+  max-width: 100px;
+  width: 100%;
+  margin: 10px;
+}
+
+.subtotal-right {
+  text-align: right;
+}
+/* End of Total Charge */
+
+/* Order Confirmation */
+.order-confirm-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.order-confirm-btn button {
+  font-family: "Poppins", sans-serif;
+  max-width: 530px;
+  width: 100%;
+  justify-content: center;
+  padding: 0.8rem 2.5rem;
+  margin-block: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: #b2533e;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.order-confirm-btn button:hover {
+  border: 3px solid #b2533e;
+  color: #b2533e;
+  background-color: transparent;
+}
+
+.order-confirm-btn a {
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  color: #b2533e;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  max-height: 520px;
+  height: 100%;
+}
+
+.img-bill {
+  height: 75px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.img-bill img {
+  height: 100%;
+}
+
+.subtotal-bill {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin: 0;
+  text-align: left;
+  border: 0.5px solid gray;
+}
+
+.subtotal-bill h3 {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.hr-modal {
+  background-color: #b2533e;
+  max-width: 450px;
+  height: 4px;
+  border-radius: 10px;
+  margin-inline: auto;
+}
+
+.modal-content h1 {
+  font-size: 16px;
+}
+
+.modal-content p {
+  max-width: 550px;
+  width: 100%;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modal-title {
+  display: flex;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-block: 10px;
+}
+
+.list-order {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  height: 150px;
+  margin-block: 20px;
+}
+
+.list-detail {
+  display: flex;
+  height: 30px;
+  width: 480px;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-detail .qty {
+  width: 80px;
+}
+
+.list-detail .menu-bill {
+  text-align: left;
+}
+
+.list-detail .price {
+  text-align: right;
+  width: 200px;
+}
+
+.list-detail p {
+  margin: 0;
+}
+
+.list-detail hr {
+  height: 20px;
+}
+
+.button-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.button-modal button:hover {
+  border: 3px solid black;
+  color: black;
+  background-color: transparent;
+}
+
+.button-modal a {
+  text-decoration: none;
+}
+
+.close {
+  background-color: #b3b4b4;
+  font-family: "Poppins", sans-serif;
+  font-weight: 10px;
+  color: black;
+  padding: 10px;
+  border: 3px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.close-btn {
+  background-color: #186f65;
+  font-family: "Poppins", sans-serif;
+  font-weight: 10px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+#homeBtn {
+  background-color: #186f65;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.modal3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content1 {
+  color: white;
+}
+
+.modal-content2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #b2533e;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  max-height: 620px;
+  height: 100%;
+}
+
+.modal-content2 p {
+  color: black;
+  font-size: 21px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+.modal-content2 button:hover {
+  border: 3px solid #186f65;
+  color: #186f65;
+  background-color: transparent;
+}
+
+.modal-content2 a {
+  text-decoration: none;
+}
+
+.payment-box {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  justify-content: space-between;
+  margin-block: 15px;
+  background-color: #e3e3e3;
+}
+
+.payment-box p {
+  font-size: 14px;
+}
+
+.gopay {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gopay img {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+}
+
+.barcode-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 270px;
+}
+
+.barcode-box img {
+  width: 250px;
+  height: 250px;
+}
+
+.payment-btn {
+  width: 100%;
+}
+
+.modal-content3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #b2533e;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  max-height: 240px;
+  height: 100%;
+}
+
+.modal-content3 p {
+  color: black;
+  font-size: 21px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+.modal-content3 button:hover {
+  border: 3px solid #186f65;
+  color: #186f65;
+  background-color: transparent;
+}
+/* End of Order Confirmation */
+
+/* Responsive Page Setting */
+
+/* 1. Display Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  header.navbar-container .logo img {
+    width: 150px;
+  }
+
+  main,
+  body,
+  html {
+    height: auto;
+  }
+
+  main .content .content-image img {
+    width: 75%;
+  }
+
+  .container {
+    max-height: 800px;
+    height: 100%;
+  }
+
+  .content {
+    height: 680px;
+  }
+
+  .row-content {
+    width: 450px;
+    height: 780px;
+    padding: 0px 15px;
+  }
+
+  .form {
+    max-height: 430px;
+    height: 100%;
+  }
+
+  .order-menu {
+    width: 100%;
+  }
+
+  .subtotal-item,
+  .order-confirm-btn button {
+    margin-inline: 18px;
+  }
+
+  .side-bar-order {
+    width: 640px;
+  }
+
+  .form .first-name,
+  .last-name,
+  .email,
+  .no-telp {
+    max-width: 410px;
+    width: 100%;
+    max-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+  }
+
+  .form .first-name label,
+  .last-name label,
+  .email label,
+  .no-telp label {
+    max-width: 410px;
+    width: 100%;
+  }
+
+  .form .first-name input,
+  .last-name input,
+  .email input,
+  .no-telp input {
+    max-width: 410px;
+    width: 100%;
+  }
+}
+/* End of Display Laptop */
+
+/* 2. Display Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .navbar-container {
+    max-height: 60px;
+    height: 100%;
+  }
+
+  header.navbar-container .logo img {
+    width: 120px;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .nav-list {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    top: 60px;
+    flex-direction: column;
+    background-color: #439c91;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 170px;
+    margin-block: 20px;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .order {
+    max-height: 50px;
+    font-size: 15px;
+    font-family: "Poppins";
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .order hr {
+    display: flex;
+    max-width: 160px;
+    width: 100%;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #b2533e;
+    margin: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 1200px;
+    height: 100%;
+    margin-top: 60px;
+  }
+
+  .content {
+    height: 100%;
+  }
+
+  .row {
+    width: 500px;
+    max-height: 500px;
+    height: 100%;
+    justify-content: left;
+  }
+
+  .scroll {
+    overflow: auto;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .side-bar-order {
+    align-items: center;
+    width: 475px;
+    height: 130px;
+    margin: 20px 10px;
+    box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #fdfaf2;
+  }
+
+  .side-bar-order img {
+    width: 150px;
+    height: 130px;
+  }
+
+  .order-type {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .order-total {
+    width: 100px;
+    margin-top: 5px;
+    margin-inline: 10px;
+  }
+
+  .order-total p {
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .add-order h2 {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .add-order button {
+    max-width: 70px;
+    width: 100%;
+    justify-content: center;
+    padding: 5px 3px;
+    margin-block: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: #b2533e;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    margin-right: 30px;
+  }
+
+  .row-content {
+    width: 500px;
+    margin-inline: 10px;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .content {
+    display: block;
+    background-color: #fff1cd;
+    width: 100%;
+    height: 670px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, 0.5);
+    margin-top: 0;
+  }
+
+  .shipping-info {
+    font-size: 16px;
+  }
+
+  .form label {
+    font-size: 12px;
+  }
+
+  .form .first-name,
+  .last-name,
+  .email,
+  .no-telp {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .form {
+    max-height: 430px;
+    height: 100%;
+  }
+
+  .form input {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .order-menu {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  .notes input {
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #186f65;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+
+  .order-confirm-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-inline: 20px;
+  }
+
+  .order-confirm-btn button {
+    max-width: 530px;
+    width: 100%;
+    justify-content: center;
+    padding: 0.8rem 2.5rem;
+    margin-block: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: #b2533e;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+  }
+
+  .subtotal {
+    max-height: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subtotal-item {
+    margin-inline: 20px;
+    font-size: 12px;
+  }
+
+  .footer-col .title {
+    font-size: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-col,
+  .footer-col-com {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .footer-col .title,
+  .footer-col-com .title {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .social-links i {
+    font-size: 17px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-col h3 {
+    margin-block: 7px;
+  }
+}
+/* End of Display Tablet */
+
+/* 3. Display HP */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  header.navbar-container .logo img {
+    width: 130px;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .nav-list {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    top: 60px;
+    flex-direction: column;
+    background-color: #439c91;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 170px;
+    margin-block: 20px;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .row {
+    height: 400px;
+  }
+
+  .scroll {
+    height: 350px;
+  }
+
+  .add-order {
+    height: 50px;
+  }
+
+  .side-bar-order {
+    width: 350px;
+    height: 105px;
+  }
+
+  .side-bar-order img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .order h2 {
+    font-size: 20px;
+  }
+
+  .order hr {
+    width: 150px;
+    height: 4px;
+  }
+
+  .side-bar-order img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .order-type {
+    padding: 10px;
+  }
+
+  .order-type p {
+    font-size: 12px;
+  }
+
+  .notes input {
+    margin-top: 8px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .order-total {
+    width: 80px;
+  }
+
+  .order-total p {
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .row-content {
+    margin-inline: 15px;
+    height: 640px;
+  }
+
+  .content {
+    height: 630px;
+  }
+
+  .form {
+    max-height: 400px;
+    height: 100%;
+  }
+
+  .form .first-name,
+  .last-name,
+  .email,
+  .no-telp {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .form .address {
+    height: 100px;
+  }
+
+  .form input {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .order-confirm-btn {
+    margin-top: 20px;
+  }
+
+  .modal-content {
+    width: 340px;
+    height: 470px;
+  }
+
+  .list-order {
+    margin-block: 10px;
+  }
+
+  .modal-content p {
+    font-size: 12px;
+  }
+
+  .subtotal-bill h3 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .subtotal-bill {
+    height: 85px;
+  }
+
+  .list-order,
+  .list-detail {
+    width: 100%;
+  }
+
+  .modal-content h1 {
+    font-size: 14px;
+  }
+
+  .close-btn {
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 999px;
+  }
+
+  .close {
+    font-size: 10px;
+    border-radius: 999px;
+  }
+
+  .img-bill img {
+    width: 150px;
+    height: 60px;
+  }
+
+  .modal-content2 h1 {
+    font-size: 21px;
+  }
+
+  .modal-content2 p {
+    font-size: 18px;
+  }
+
+  #homeBtn {
+    padding: 10px;
+  }
+
+  .modal-content2 {
+    width: 340px;
+    height: 200px;
+  }
+
+  .subtotal-item {
+    font-size: 12px;
+  }
+
+  .form label {
+    font-size: 12px;
+  }
+
+  .shipping-info {
+    font-size: 16px;
+  }
+
+  .footer-col img {
+    max-width: 144px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright {
+    text-align: center;
+    width: 100%;
+  }
+}
+/* End of Display Hp */
